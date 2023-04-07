@@ -5,7 +5,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-#include <learnopengl/filesystem.h>
+//#include <learnopengl/filesystem.h>
 #include <learnopengl/shader_m.h>
 #include <learnopengl/camera.h>
 #include <learnopengl/model.h>
@@ -78,13 +78,13 @@ int main()
 
     // build and compile shaders
     // -------------------------
-    Shader ourShader("1.model_loading.vs", "1.model_loading.fs");
+    Shader ourShader("A:/LearnOpenGL/src/3.model_loading/1.model_loading/1.model_loading.vs", "A:/LearnOpenGL/src/3.model_loading/1.model_loading/1.model_loading.fs");
 
     // load models
     // -----------
-    Model ourModel(FileSystem::getPath("resources/objects/backpack/backpack.obj"));
+    //Model ourModel(FileSystem::getPath("resources/objects/nanosuit/nanosuit.obj"));
+    Model ourModel("A:/LearnOpenGL/resources/objects/nanosuit/nanosuit.obj");
 
-    
     // draw in wireframe
     //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
